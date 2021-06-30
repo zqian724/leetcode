@@ -11,20 +11,19 @@ public class No_1_TwoSum {
         int[] result = solution.twoSum(array, target);
         System.out.println(Arrays.toString(result));
     }
-}
 
-class Solution {
-
-    public int[] twoSum(int[] nums, int target) {
-        int i,j,sum;
-        for(i=0;i<nums.length;i++){
-            for(j=i+1;j<nums.length;j++){
-                sum=nums[i]+nums[j];
-                if(sum==target){
-                    return new int[] { i, j };
-                }
-            }
-        }
-        throw new IllegalArgumentException("No solution");
+     static class Solution {
+         public int[] twoSum(int[] nums, int target) {
+             int i, j, sum;
+             for (i = 0; i < nums.length; i++) {
+                 for (j = i + 1; j < nums.length; j++) {
+                     sum = nums[i] + nums[j];
+                     if (sum == target) {
+                         return new int[]{i, j};
+                     }
+                 }
+             }
+             throw new IllegalArgumentException("No solution");
+         }
     }
 }
