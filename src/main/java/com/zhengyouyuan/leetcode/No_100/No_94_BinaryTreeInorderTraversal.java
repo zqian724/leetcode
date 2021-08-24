@@ -1,4 +1,4 @@
-package com.zhengyouyuan.leetcode;
+package com.zhengyouyuan.leetcode.No_100;
 
 import java.util.LinkedList;
 

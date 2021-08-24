@@ -1,4 +1,4 @@
-package com.zhengyouyuan.leetcode;
+package com.zhengyouyuan.leetcode.No_1000;
 
 import java.util.Arrays;
 

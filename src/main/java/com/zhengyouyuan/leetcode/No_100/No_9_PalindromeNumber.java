@@ -1,4 +1,4 @@
-package com.zhengyouyuan.leetcode;
+package com.zhengyouyuan.leetcode.No_100;
 
 public class No_9_PalindromeNumber {
 
