@@ -1,0 +1,1 @@
+DELETE FROM Person WHERE id IN (SELECT * FROM  (SELECT p1.id FROM Person p1 INNER JOIN Person p2 WHERE p1.Email = p2.Email AND p1.id > p2.id) a)
