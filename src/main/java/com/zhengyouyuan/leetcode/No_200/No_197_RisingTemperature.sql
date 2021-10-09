@@ -1,0 +1,1 @@
+SELECT today.id FROM Weather today INNER JOIN Weather yesterday ON DATE_SUB(today.recordDate,INTERVAL 1 DAY) = yesterday.recordDate AND today.Temperature > yesterday.Temperature
