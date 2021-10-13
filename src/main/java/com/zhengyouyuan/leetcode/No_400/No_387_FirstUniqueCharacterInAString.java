@@ -17,8 +17,8 @@ public class No_387_FirstUniqueCharacterInAString {
             for (char c : s.toCharArray()) {
                 map.merge(c, 1, Integer::sum);
             }
-            Character key = map.entrySet().stream().filter(it -> it.getValue() == 1).map(Map.Entry::getKey).findFirst().orElse(null);
-            return key == null ? -1 : s.indexOf(key);
+            return map.entrySet().stream().filter(it -> it.getValue() == 1).map(Map.Entry::getKey)
+                    .findFirst().map(s::indexOf).orElse(-1);
         }
     }
 }
